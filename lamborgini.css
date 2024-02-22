@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100vw;
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+}
+#logo{
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: -2%;
+    left: -1%;
+    z-index: 3;
+}
+
+#listl{
+    color: white;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    font-size: 2.5vh;
+    left: 135px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#listr{
+    color: white;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 55px;
+    font-size: 2.5vh;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
+}
+.li2:hover #ul{
+    width: 100%;
+}
+.li2{
+    position: relative;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.li1{
+    margin-top: 40px;
+    margin-left: 2%;
+    position: relative;
+    width: 8vw;
+    text-align: center;
+    z-index: 10;
+    /* color: red; */
+    /* border: 1px solid orange; */
+}
+.subli1{
+    width: 98vw;
+    height: 350px;
+    /* border: 1px solid red; */
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    left: -170%;
+    margin-top: 12px;
+    padding-left: 180%;
+    background-color: black;
+    display: none;
+}
+.subli1:hover{
+    height: 350px;
+}
+.li1:hover .subli1{
+    display: block;
+    animation: liani 1s backwards;
+}
+@keyframes liani {
+    0%{
+        height: 20px;
+        filter: opacity(0%);
+        color: transparent;
+    }
+    40%{
+        filter: opacity(100%);
+        height: 350px;
+    }
+    100%{  
+        height: 350px;
+    }
+}
+.subli2{
+    width: 99vw;
+    height: 350px;
+    background-color: black;
+    /* border: 1px solid red; */
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    left: -360%;
+    margin-top: 12px;
+    padding-left: 360%;
+    display: none;
+}
+.subli2:hover{
+    height: 350px;
+}
+.li1:hover .subli2{
+    display: block;
+    animation: liani 1s backwards;
+}
+.subli3{
+    width: 99vw;
+    height: 350px;
+    background-color: black;
+    /* border: 1px solid red; */
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    left: -450%;
+    margin-top: 12px;
+    padding-left: 460%;
+    display: none;
+}
+.li1:hover .subli3{
+    display: block;
+    animation: liani 1.5s backwards ;
+}
+.subli3:hover{
+    height: 350px;
+}
+.subli4{
+    width: 99vw;
+    height: 100vh;
+    background-color: black;
+    /* border: 1px solid red; */
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    right: -490%;
+    margin-top: 12px;
+    padding-left: 460%;
+    display: none;
+}
+.li2:hover .subli4{
+    display: block;
+    animation: liani2 1.5s backwards ;
+}
+@keyframes liani2 {
+    0%{
+        height: 3vh;
+        filter: opacity(0%);
+        color: transparent;
+    }
+    40%{
+        filter: opacity(100%);
+        height: 100vh;
+    }
+    100%{  
+        height: 100vh;
+    }
+}
+.subli4:hover{
+    height: 100vh;
+}
+.subl41{
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+    list-style: none;
+    display: flex;
+    width: 170px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+#subl42{
+    left: 38%;
+}
+#subl43{
+    left: 55%;
+}
+.sl1{
+    margin-top: 30px;
+}
+footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+    position: fixed;
+    bottom: -10vh;
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+#cont{
+    width: 100vw;
+    height: 1000vh;
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+.section{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    position: relative;
+}
+#leftn{
+    width: 230px;
+    height: 30px;
+    background-color: black;
+    clip-path: polygon(90% 0, 100% 100%, 0 100%, 0 0);
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+}
+#h2{
+    color: transparent;
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    letter-spacing: 3px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(75deg,white,white,transparent,transparent);
+    background-size: 600%;
+    background-position: -1000px ;
+    animation: textani 4s forwards ;
+    background-repeat: no-repeat ;
+    background-clip: text;  
+    -webkit-background-clip: text;
+}
+@keyframes textani {
+    from{
+        background-position: -1000px;
+    }
+    to{
+        background-position: 0px;
+    }
+}
+#model{
+    color: white;
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    font-size: 70px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    animation: modelani 1.8s ;
+}
+@keyframes modelani {
+    from{
+        transform: translatex(-530px);
+    }
+    to{
+        transform: translatex(0px);
+    }
+}
+#ln{
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#hexa{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: hexaani 1.5s;
+}
+@keyframes hexaani {
+    from{
+        transform: scale(0.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+#hexa2{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    background-color: grey;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+.titleb{
+    color: white;
+    position: absolute;
+    bottom: 28%;
+    left: 73%;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#tb1{
+    font-size: 15px;
+    animation: tbani 2s ;
+}
+#tb2{
+    bottom: 22%;
+    font-size:22px;
+    animation: tbani 2.3s ;
+}
+@keyframes tbani {
+    from{
+        transform: translatey(200px);
+        filter: opacity(0%);
+    }
+    to{
+        transform: translatey(0px);
+    }
+}
+#img{
+    width: 110%;
+    height: 120%;
+    position: absolute;
+    bottom: 0px;
+    /* filter: brightness(90%); */
+}
+#s1{
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#ul{
+    width: 0% ;
+    height:1px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 6px;
+    transition: all 0.6s;
+}
+.li1:hover #ul{
+    width: 100%;
+}
+
+#msg{
+    font-size: 15px;
+}
+#clp1,#clp2{
+    width: 60%;
+    height: 145%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    clip-path: polygon(100% 0, 100% 70%, 79% 100%, 0 100%, 78% 0);
+}
+#clp2{
+    transform: rotatey(180deg) rotatex(180deg);
+    left: 0px;
+    top: 52%;
+}
+#img1{
+    width: 80%;
+    position: relative;
+    left: 30%;
+    height: 55%;
+}
+#img21{
+    width: 80%;
+    position: relative;
+    left: 30%;
+    height: 55%;
+    transform: rotatey(180deg) rotatex(180deg);
+}
+#img2{
+    width: 100%;
+    height: 50%;
+}
+#img22{
+    width: 100%;
+    height: 50%;
+    transform: rotatey(180deg) rotatex(180deg);
+}
+aside{
+    width: 100%;
+    height: 4%;
+}
+#s3{
+    background-color: rgba(201, 207, 205, 0.231);
+}
+#clp51{
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute;
+    right: 0px;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
+}
+#clp61{
+    width: 60%;
+    height: 75%;
+    background-color: blueviolet;
+    position: absolute;
+    right: 0px;
+    top: 80%;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+#clp71{
+    width: 40%;
+    height: 55%;
+    position: absolute;
+    bottom: 0px;
+    background-color: purple;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+#clp81,#clp82{
+    width: 50%;
+    height: 65%;
+    background-color: blue;
+    position: absolute;
+    top: 65%;
+    right: 0px;
+    clip-path: polygon(23% 0, 100% 0%, 75% 100%, 0% 100%);
+}
+#clp82{
+    background-color: crimson;
+    width: 30%;
+    height: 65%;
+    left: 28%;
+    top: 70%;
+    clip-path: polygon(100% 0, 62% 100%, 0 100%, 35% 0);
+}
+#p1{
+    position: absolute;
+    bottom: 22%;
+    width: 40%;
+    left: 8%;
+    letter-spacing: 1.5px ;
+    word-spacing: 6px;
+    line-height: 20px;
+    text-indent: 80px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#p2{
+    position: absolute;
+    top: 0px;
+    left: 8%;
+    ont-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#uru{
+    width: 400px;
+    height: 120px;
+    position: absolute;
+    top: 15%;
+    left: 16%;
+}
+#p3{
+    position: absolute;
+    top: 5px;
+    width: 40%;
+    right: 8%;
+    letter-spacing: 1.5px ;
+    word-spacing: 6px;
+    line-height: 20px;
+    text-indent: 80px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#p4{
+    position: absolute;
+    bottom: 22%;
+    width: 40%;
+    left: 7%;
+    z-index: 2;
+    letter-spacing: 1.5px ;
+    word-spacing: 6px;
+    line-height: 20px;
+    text-indent: 80px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#revlt{
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+#hurac{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    right: 10%;
+    top: -18%;
+}
+#p5{
+    position: absolute;
+    bottom: 38%;
+    width: 40%;
+    left: 7%;
+    z-index: 2;
+    letter-spacing: 1.5px ;
+    word-spacing: 6px;
+    line-height: 20px;
+    text-indent: 80px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#lsr{
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#p6{
+    position: absolute;
+    top: 00%;
+    width: 40%;
+    right: 15%;
+    z-index: 2;
+    letter-spacing: 1.5px ;
+    word-spacing: 6px;
+    line-height: 20px;
+    text-indent: 80px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#concept{
+    position: absolute;
+    right: 35%;
+    bottom: 10%;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#hovdiv{
+    width: 100vw;
+    height: 65%;
+    background-color: aqua;
+    position: absolute;
+    bottom: 0px;
+}
+#hs1,#hs2{
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#hs2{
+    right: 0px;
+}
+#hsimg,#hsimg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.27s;
+    filter: brightness(70%);
+}
+#hsimg:hover{
+    transform: scale(1.3);
+}
+pre{
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+#s10{
+    background-color: rgba(0, 0, 0, 0.861);
+    color: white;
+}
+.com1{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+.com2{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 40px;
+    font-family: 'Ephesis', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+.ulelm{
+    position: absolute;
+    left: 8%;
+    bottom: 50%;
+    font-size: 20px;
+}
+#ulforelm{
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 1s;
+    left: 7%;
+    bottom: 40%;
+}
+.ulelm:hover+#ulforelm{
+    width: 280px;
+}
+#ulforelmdup{
+    width: 280px;
+    height: 0.9px;
+    background-color: rgba(128, 128, 128, 0.801);
+    position: absolute;
+    left: 7%;
+    bottom: 40%;
+    border-radius: 10px;
+    transition: all 1s;
+}
+#elmsec{
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    left: 45%;
+    bottom: 58%;
+}
+#elmsec1{
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    left: 45%;
+    bottom: 49%;
+}
+#elmsec2{
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    left: 45%;
+    bottom: 39%;
+}
+#elmsec61{
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+}
+#elmsec62{
+    width: 350px;
+    height: 80px;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
